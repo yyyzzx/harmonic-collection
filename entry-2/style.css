@@ -1,0 +1,107 @@
+
+header {
+    background-color: lightsteelblue;
+    height:70px;
+    width:100%;
+    position: fixed;
+    z-index: 1;
+}
+
+h1 {
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    position:absolute;
+    left:120px;
+    top:0;
+    line-height: 70px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    color: black;
+    margin-right: 4vw;
+    font-family: sans-serif;
+}
+
+header ul {
+    position:absolute;
+    right: 7vw;
+    top:0;
+    line-height: 70px;
+}
+
+.bgpic {
+    background-image: url("images/background.gif");
+    position: absolute;
+    top: 70px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.intro {
+    margin: 40px 7vw;
+    padding: 20px;
+    background-color: rgba(176, 196, 222, 0.85);
+    color:black;
+    text-align: justify;
+}
+
+p {
+    font-size: small;
+    font-family: sans-serif;
+}
+
+
+.intro li {
+    font-size: small;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.intro a {
+    text-decoration: underline;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li::before {
+    content: "\2726";
+}
+
+.white {
+    background-color: rgba(248, 248, 255, 0.85);
+    margin: 0px 7vw 40px 7vw;
+    padding: 20px;
+    text-align: justify;
+}
+
+.blue {
+    background-color: rgba(176, 196, 222, 0.85);
+    margin: 0px 7vw 40px 7vw;
+    padding:20px;
+}
+
+.date {
+    border-bottom: 1px dotted rgb(0, 0, 0, 0.5);
+    display: inline;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    max-width: 86vw;
+}
