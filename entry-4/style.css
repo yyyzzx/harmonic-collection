@@ -1,0 +1,101 @@
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 32pt;
+
+}
+
+header {
+    background-image: url("images/bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 190px 8vw;
+}
+
+header li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: white;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+h2 {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    border-bottom: 1px dotted black;
+    display: inline;
+    font-size: larger;
+}
+
+.intro {
+    background-color: #c1b4ab;
+    padding: 20px 8vw 0 8vw;
+}
+
+.intro li::before {
+    content: "\2731";
+}
+
+.log {
+    background-color: #c1b4ab;
+    padding: 0px 8vw;
+}
+
+.log li::before {
+    content: "\2731";
+}
+
+table, th, td {
+    border: 0px solid black;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.log img {
+    width: 35vw;
+}
+
+.left th:nth-child(1) {
+    width: 27vw;
+}
+
+.left th:nth-child(2) {
+    width: 57vw;
+}
+
+.right th:nth-child(1) {
+    width: 57vw;
+}
+
+.right th:nth-child(2) {
+    width: 27vw;
+}
+
+li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reflection {
+    background-color: #c1b4ab;
+    padding: 20px 8vw 30px 8vw;
+}
+
+.reflection li::before {
+    content: "\2731";
+}
+
+.width {
+    width: 20vw;
+}
