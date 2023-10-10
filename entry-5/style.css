@@ -1,0 +1,331 @@
+.bgimg {
+    background-image: url("images/bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100vw;
+
+}
+
+header {
+    background-color: #002dcb;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+h1 {
+    font-family: "Quattrocento", serif;
+    font-size: 30pt;
+    color: #9aaed5;
+    position: absolute;
+    left: 9vw;
+    line-height: 80px;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    line-height: 80px;
+}
+
+header li {
+    font-family: "Quattrocento", serif;
+    display: inline;
+    color:#9aaed5;
+    margin-right: 6vw;
+    font-size: 13pt;
+
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+h2 {
+    font-family: "Quattrocento", serif;
+    font-size: 23pt;
+    color: #9aaed5;
+}
+
+p {
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
+    color:#9aaed5;
+    text-align: justify;
+}
+
+.intro {
+    margin: 120px 7vw 40px 7vw;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: rgba(0, 45, 203, 0.67);
+    border-radius: 0 40px;
+}
+
+.intro li {
+    font-size: 11pt;
+    font-family: "Red Hat Text", sans-serif;
+    color: #9aaed5;
+    padding-left: 2vw;
+
+}
+
+.intro li::before {
+    content: "\27A5";
+}
+
+.textbox {
+    margin: 50px 7vw ;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: rgba(0, 45, 203, 0.67);
+    border-radius: 0 40px;
+}
+
+.textbox th {
+    border: 0px black solid;
+    color: white;
+    font-size: 8pt;
+    font-family: "Red Hat Text", sans-serif;
+    text-align: center;
+}
+
+.textbox th:nth-child(odd) {
+    background-color: #9aaed5;
+}
+
+.tue th:nth-child(1) {
+    width: 25.625vw;
+}
+
+.tue th:nth-child(2) {
+    width: 5.125vw;
+}
+
+.tue th:nth-child(3) {
+    width: 10.819vw;
+}
+
+.tue th:nth-child(4) {
+    width: 2.278vw;
+}
+
+.tue th:nth-child(5) {
+    width: 21.639vw;
+}
+
+.tue th:nth-child(6) {
+    width: 6.264vw;
+}
+
+.tue th:nth-child(7) {
+    width: 10.25vw;
+}
+
+.wed th:nth-child(1) {
+    width: 25.625vw;
+}
+
+.wed th:nth-child(2) {
+    width: 8.542vw;
+}
+
+.wed th:nth-child(3) {
+    width: 5.69vw;
+}
+
+.wed th:nth-child(4) {
+    width: 1.139vw;
+}
+
+.wed th:nth-child(5) {
+    width: 11.389vw;
+}
+
+.wed th:nth-child(6) {
+    width: 2.847vw;
+}
+
+.wed th:nth-child(7) {
+    width: 7.972vw;
+}
+
+.wed th:nth-child(8) {
+    width: 1.708vw;
+}
+
+.wed th:nth-child(9) {
+    width: 17.083vw;
+}
+
+.thu th:nth-child(1) {
+    width: 39.292vw;
+}
+
+.thu th:nth-child(2) {
+    width: 2.847vw;
+}
+
+.thu th:nth-child(3) {
+    width: 19.361vw;
+}
+
+.thu th:nth-child(4) {
+    width: 1.708vw;
+}
+
+.thu th:nth-child(5) {
+    width: 18.792vw;
+}
+
+.fri th:nth-child(1) {
+    width: 25.625vw;
+}
+
+.fri th:nth-child(2) {
+    width: 19.361vw;
+}
+
+.fri th:nth-child(3) {
+    width: 5.125vw;
+}
+
+.fri th:nth-child(4) {
+    width: 7.403vw;
+}
+
+.fri th:nth-child(5) {
+    width: 18.792vw;
+}
+
+.fri th:nth-child(6) {
+    width: 1.708vw;
+}
+
+.fri th:nth-child(7) {
+    width: 3.986vw;
+}
+
+.sat th:nth-child(1) {
+    width: 43.847vw;
+}
+
+.sat th:nth-child(2) {
+    width: 2.278vw;
+}
+
+.sat th:nth-child(3) {
+    width: 9.111vw;
+}
+
+.sat th:nth-child(4) {
+    width: 2.278vw;
+}
+
+.sat th:nth-child(5) {
+    width: 3.986vw;
+}
+
+.sat th:nth-child(6) {
+    width: 1.708vw;
+}
+
+.sat th:nth-child(7) {
+    width: 18.792vw;
+}
+
+.sun th:nth-child(1) {
+    width: 44.986vw;
+}
+
+.sun th:nth-child(2) {
+    width: 3.417vw;
+}
+
+.sun th:nth-child(3) {
+    width: 13.097vw;
+}
+
+.sun th:nth-child(4) {
+    width: 5.125vw;
+}
+
+.sun th:nth-child(5) {
+    width: 15.375vw;
+}
+
+.mon th:nth-child(1) {
+    width: 25.625vw;
+}
+
+.mon th:nth-child(2) {
+    width: 17.083vw;
+}
+
+.mon th:nth-child(3) {
+    width: 17.653vw;
+}
+
+.mon th:nth-child(4) {
+    width: 2.847vw;
+}
+
+.mon th:nth-child(5) {
+    width: 18.792vw;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.img-container img {
+    width: 60vw;
+}
+
+.button {
+    margin: 50px 7vw;
+}
+
+.button table, tr, th {
+    border: 0px black solid;
+    width: 86vw;
+    height: 30px;
+    vertical-align: middle;
+    height: 45px;
+}
+
+
+.button table {
+    text-align: center;
+    color: #9aaed5;
+    font-family: "Red Hat Text", sans-serif;
+    border-radius: 10px;
+}
+
+.button th:nth-child(1) {
+    width: 7vw;
+}
+
+.button th:nth-child(3) {
+    width: 6vw;
+}
+
+.button th:nth-child(5) {
+    width: 7vw;
+}
+
+.button th:nth-child(even) {
+    background-color: rgba(0, 45, 203, 0.67);
+    border-radius: 20px;
+    width: 31vw;
+}
+
+.button table a:hover {
+    text-decoration: underline;
+    color: white;
+}
