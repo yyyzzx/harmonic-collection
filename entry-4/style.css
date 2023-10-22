@@ -1,101 +1,208 @@
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-    font-size: 32pt;
+.bgimg {
+    background-image: url("/entry-4/images/bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100vw;
+}
 
+h1 {
+    font-family: "Autour One", serif;
+    font-size: 22pt;
+    color: black;
+    position: absolute;
+    left: 10vw;
+    line-height: 80px;
 }
 
 header {
-    background-image: url("images/bgimg.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0 190px 8vw;
+    background-color: lightsalmon;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    line-height: 80px;
 }
 
 header li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    text-decoration: underline;
+    font-family: "Autour One", serif;
+    display: inline;
+    color: black;
+    margin-right: 6vw;
+    font-size: 10pt;
 }
 
 header a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
     color: black;
+    text-align: justify;
 }
+
 h2 {
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Autour One", serif;
+    font-size: 18pt;
+    color: black;
 }
 
 h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    font-size: 15pt;
+    font-family: "Red Hat Text", sans-serif;
+    color:black;
+    text-align: justify;
     border-bottom: 1px dotted black;
     display: inline;
     font-size: larger;
 }
 
 .intro {
-    background-color: #c1b4ab;
-    padding: 20px 8vw 0 8vw;
+    margin: 115px 9vw 35px 0;
+    padding: 3vw 5vw 4vw 10vw;
+    background-color: rgba(255, 218, 185, 0.8);
+    border-radius: 0 90px 90px 0;
 }
 
 .intro li::before {
     content: "\2731";
 }
 
-.log {
-    background-color: #c1b4ab;
-    padding: 0px 8vw;
-}
-
 .log li::before {
     content: "\2731";
 }
 
-table, th, td {
+.log table, th, td {
     border: 0px solid black;
     vertical-align: middle;
     text-align: left;
 }
 
-.log img {
-    width: 35vw;
+.log table {
+    width: 100vw;
 }
 
-.left th:nth-child(1) {
-    width: 27vw;
+
+.right th:nth-child(2) {
+    background-color: rgba(255, 160, 122, 0.8);
+    border-radius: 90px 0 0 90px;
+    padding: 2vw 3vw;
+}
+
+.right th:nth-child(3),
+.right th:nth-child(4) {
+    background-color: rgba(255, 160, 122, 0.8);
+}
+
+
+.left th:nth-child(3) {
+    background-color: rgba(255, 218, 185, 0.8);
+    border-radius: 0 90px 90px 0;
+    padding: 2vw;
+}
+
+.left th:nth-child(1),
+.left th:nth-child(2) {
+    background-color: rgba(255, 218, 185, 0.8);
+}
+
+.left tr:nth-child(2) {
+    height: 5vh;
+}
+
+.log img {
+    width: 28vw;
 }
 
 .left th:nth-child(2) {
-    width: 57vw;
+    width: 28vw;
 }
 
-.right th:nth-child(1) {
-    width: 57vw;
+.left th:nth-child(3) {
+    width: 56vw;
 }
 
 .right th:nth-child(2) {
-    width: 27vw;
+    width: 56vw;
+}
+
+.right th:nth-child(3) {
+    width: 28vw;
+}
+
+.right th:nth-child(1),
+.right th:nth-child(4),
+.left th:nth-child(1),
+.left th:nth-child(4) {
+    width: 7vw;
 }
 
 li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
+    color: black;
 }
 
 .reflection {
-    background-color: #c1b4ab;
-    padding: 20px 8vw 30px 8vw;
+    padding: 2vw 9vw;
+    background-color: rgba(255, 160, 122, 0.8);
+    margin: 0 0 0 9vw;
+    padding: 3vw 10vw 3vw 5vw;
+    border-radius: 90px 0 0 90px;
 }
 
 .reflection li::before {
     content: "\2731";
 }
 
-.width {
-    width: 20vw;
+.button {
+    margin: 60px 0;
+}
+
+.button table {
+    text-align: center;
+    color: black;
+    font-family: "Red Hat Text", sans-serif;
+    padding: 20px 0;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.button th {
+    text-align: center;
+}
+
+.button th:nth-child(1) {
+    width: 9vw;
+}
+
+.button th:nth-child(3) {
+    width: 6vw;
+}
+
+.button th:nth-child(5) {
+    width: 9vw;
+}
+
+
+.button th:nth-child(even) {
+    background-color: rgba(255, 218, 185, 0.8);
+    border-radius: 20px;
+    width: 38vw;
+}
+
+.button table a:hover {
+    text-decoration: underline;
+    color: white;
 }

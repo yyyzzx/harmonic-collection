@@ -1,0 +1,162 @@
+h1 {
+    font-family: "Rakkas", serif;
+    font-size: 85pt;
+    padding: 0 4vw 50px 4vw;
+    background-color: whitesmoke;
+    text-align: center;
+    word-spacing: 25px;
+    line-height: 180px;
+}
+
+h4 {
+    font-family: "Autour One", sans-serif;
+    font-size: 15pt;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 70px;
+    word-spacing: 4px;
+}
+
+header {
+    background-color: white;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+header ul {
+    line-height: 80px;
+
+}
+
+header li {
+    font-family: "Autour One", sans-serif;
+    display: inline;
+    font-size: 15pt;
+    margin: 0 110px;
+    border-bottom: dotted black 2px;
+}
+
+li:hover {
+    border: dotted black 2px;
+    background-color: whitesmoke;
+}
+
+#middle {
+    position: absolute;
+    margin-top: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.entries {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4vw;
+}
+
+.card {
+    position: relative;
+    max-width: 400px;
+    height: 300px;
+    background-color: white;
+    margin: 80px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    height: 410px;
+}
+
+.img {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: -60px;
+    left: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    position: relative;
+    top: -30px;
+    margin: 0 30px 30px 30px;
+    padding: 0px 0;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.text p {
+    font-family: "Red Hat Text", sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+sup {
+    font-size: 8pt;
+}
+
+h2 {
+    font-family: "Autour One", sans-serif;
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.7);
+}
+
+table {
+    width: 340px;
+}
+
+th:nth-child(1) {
+    text-align: left;
+}
+
+th:nth-child(2) {
+    text-align: right;
+}
+
+h3 {
+    font-size: 8pt;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.th:nth-child(2) {
+    text-align: right;
+}
+
+.card:hover .text {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: 0.2s;
+}

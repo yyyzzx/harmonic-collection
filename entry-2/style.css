@@ -1,6 +1,6 @@
 header {
     background-color: lightsteelblue;
-    height:70px;
+    height:80px;
     width:100%;
     position: fixed;
     z-index: 1;
@@ -8,30 +8,37 @@ header {
 
 h1 {
     color:black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Autour One", serif;
     font-size: xx-large;
     position:absolute;
-    left:120px;
+    left: 9vw;
     top:0;
-    line-height: 70px;
+    line-height: 80px;
+}
+
+p {
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
 }
 
 header a:hover {
     text-decoration: underline;
+    color: ghostwhite;
 }
 
 header li {
     display: inline;
     color: black;
-    margin-right: 4vw;
-    font-family: sans-serif;
+    margin-right: 6vw;
+    font-family: "Autour One", serif;
+    font-size: 10pt;
 }
 
 header ul {
     position:absolute;
-    right: 7vw;
+    right: 5vw;
     top:0;
-    line-height: 70px;
+    line-height: 80px;
 }
 
 .bgpic {
@@ -44,27 +51,25 @@ header ul {
 }
 
 .intro {
-    margin: 40px 7vw;
-    padding: 20px;
+    margin: 50px 7vw;
+    padding: 2vw;
     background-color: rgba(176, 196, 222, 0.85);
     color:black;
     text-align: justify;
 }
 
-p {
-    font-size: small;
-    font-family: sans-serif;
+.intro li {
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
 }
 
-
-.intro li {
-    font-size: small;
-    font-family: sans-serif;
+.intro a:hover {
+color: whitesmoke;
 }
 
 h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
+    font-family: "Autour One", serif;
+    font-size: 18pt;
 }
 
 .intro a {
@@ -81,26 +86,91 @@ h2 {
 
 .white {
     background-color: rgba(248, 248, 255, 0.85);
-    margin: 0px 7vw 40px 7vw;
-    padding: 20px;
+    margin: 50px 7vw;
+    padding: 2vw;
     text-align: justify;
 }
 
 .blue {
     background-color: rgba(176, 196, 222, 0.85);
-    margin: 0px 7vw 40px 7vw;
-    padding:20px;
+    margin: 50px 7vw;
+    padding: 2vw;
 }
 
 .date {
     border-bottom: 1px dotted rgb(0, 0, 0, 0.5);
     display: inline;
-    font-family: sans-serif;
-    font-size: small;
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.white th {
+    border: 1pt solid ghostwhite;
+}
+
+.white table {
+    width: 82vw;
+    text-align: center;
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.white th:nth-child(1),
+.white th:nth-child(3),
+.white th:nth-child(4), 
+.white th:nth-child(5),
+.white th:nth-child(6),
+.white th:nth-child(7) {
+    background-color: rgba(176, 196, 222, 0.5);
 }
 
 .img-container {
     display: flex;
     justify-content: center;
+    justify-items: center;
     max-width: 86vw;
+}
+
+.img-container img {
+    width: 60vw;
+}
+
+.button {
+    margin: 0px 7vw 40px 7vw;
+}
+
+.button table, tr, th {
+    border: 0px black solid;
+    width: 86vw;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.button table {
+    text-align: center;
+    color: black;
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.button th:nth-child(1) {
+    width: 7vw;
+}
+
+.button th:nth-child(3) {
+    width: 6vw;
+}
+
+.button th:nth-child(5) {
+    width: 7vw;
+}
+
+.button th:nth-child(even) {
+    background-color: rgba(176, 196, 222, 0.85);
+    width: 31vw;
+}
+
+.button table a:hover {
+    text-decoration: underline;
+    color: ghostwhite;
 }

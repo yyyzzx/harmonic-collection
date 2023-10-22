@@ -1,0 +1,135 @@
+.bgimg {
+    background-image: url("/entry-1/images/bgimg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100vw;
+}
+
+header {
+    background-color: #5c8b98;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+h1 {
+    font-family: "Autour One", serif;
+    font-size: 22pt;
+    color: whitesmoke;
+    position: absolute;
+    left: 9vw;
+    line-height: 80px;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    line-height: 80px;
+}
+
+header li {
+    font-family: "Autour One", serif;
+    display: inline;
+    color:whitesmoke;
+    margin-right: 6vw;
+    font-size: 10pt;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #77a4b0;
+}
+
+h2 {
+    font-family: "Autour One", serif;
+    font-size: 18pt;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 12pt;
+    font-family: "Red Hat Text", sans-serif;
+    color:whitesmoke;
+    text-align: justify;
+}
+
+.intro {
+    margin: 120px 7vw 40px 7vw;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: rgba(92, 139, 152, 0.67);
+    border-radius: 0 40px;
+}
+
+
+.intro a {
+    text-decoration: underline;
+}
+
+.intro a:hover {
+        color: #77a4b0;
+}
+
+.textbox {
+    margin: 50px 7vw;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: rgba(92, 139, 152, 0.67);
+    border-radius: 0 40px;
+}
+
+.img-container1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border: 0pt black solid;
+}
+
+.img-container1 img {
+    width: 60vw;
+}
+
+.img-container2 {
+    border: 0pt black solid;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 120vh;
+
+}
+
+.button {
+    margin: 50px 7vw;
+}
+
+.button table, tr, th {
+    border: 0px black solid;
+    width: 86vw;
+    height: 30px;
+    vertical-align: middle;
+    height: 45px;
+}
+
+.button table {
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Red Hat Text", sans-serif;
+    border-radius: 10px;
+}
+
+.button th:nth-child(even) {
+    background-color: rgba(92, 139, 152, 0.67);
+    border-radius: 20px;
+    width: 31vw;
+}
+
+.button th:nth-child(odd) {
+    width: 25.5vw;
+}
+
+.button table a:hover {
+    text-decoration: underline;
+    color: #77a4b0;
+}

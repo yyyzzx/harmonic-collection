@@ -81,7 +81,7 @@ p {
 .textbox {
     margin: 50px 7vw ;
     padding: 2vw 2vw 3vw 2vw;
-    background-color: rgba(0, 45, 203, 0.67);
+    background-color: rgba(0, 45, 203, 0.75);
     border-radius: 0 40px;
 }
 
@@ -294,9 +294,8 @@ p {
 .button table, tr, th {
     border: 0px black solid;
     width: 86vw;
-    height: 30px;
-    vertical-align: middle;
     height: 45px;
+    vertical-align: middle;
 }
 
 
@@ -320,7 +319,7 @@ p {
 }
 
 .button th:nth-child(even) {
-    background-color: rgba(0, 45, 203, 0.67);
+    background-color: rgba(0, 45, 203, 0.75);
     border-radius: 20px;
     width: 31vw;
 }
