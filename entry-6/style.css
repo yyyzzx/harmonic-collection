@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: #BAC8A0;
+    background-color: #95b088;
     height:80px;
     width:100%;
     position: fixed;
@@ -61,6 +61,10 @@ h2 {
 
 .intro a {
     text-decoration: underline;
+}
+
+.intro a:hover {
+    color: #95b088;
 }
 
 .stats,
@@ -137,7 +141,8 @@ h2 {
     font-family: "Red Hat Text", sans-serif;
 }
 
-.button th:nth-child(1) {
+.button th:nth-child(1),
+.button th:nth-child(5) {
     width: 7vw;
 }
 
@@ -145,8 +150,9 @@ h2 {
     width: 6vw;
 }
 
-.button th:nth-child(5) {
-    width: 7vw;
+.button th:nth-child(2):hover,
+.button th:nth-child(4):hover {
+    background-color: #95b088;
 }
 
 .button th:nth-child(even) {
