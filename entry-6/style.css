@@ -85,7 +85,8 @@ h2 {
 }
 
 .completion th:first-child {
-    padding-left: 2px;
+    padding-left: 3px;
+    text-align: left;
 }
 
 .completion th:nth-child(2),
@@ -108,6 +109,10 @@ h2 {
     justify-items: center;
 }
 
+.img-container img {
+    max-height: 650px;
+}
+
 .stats li {
     font-size: 12pt;
     font-family: "Red Hat Text", sans-serif;
@@ -121,7 +126,7 @@ h2 {
     margin: 0px 7vw 40px 7vw;
 }
 
-.button table {
+.button table, th {
     width: 86vw;
     height: 45px;
     line-height: 45px;

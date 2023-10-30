@@ -37,11 +37,16 @@ header li {
     font-size: 15pt;
     margin: 0 110px;
     border-bottom: dotted black 2px;
+    border-top: dotted white 2px;
+    border-left: dotted white 2px;
+    border-right: dotted white 2px;
+    padding: 5px 5px 0 5px;
 }
 
 li:hover {
     border: dotted black 2px;
     background-color: whitesmoke;
+    padding: 5px;
 }
 
 #middle {
