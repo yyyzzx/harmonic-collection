@@ -1,5 +1,5 @@
 .bgimg {
-    background-image: url("/entry-1/images/bgimg.jpeg");
+    background-image: url("images/bgimg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
