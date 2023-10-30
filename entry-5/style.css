@@ -6,7 +6,9 @@
     background-attachment: fixed;
     position: absolute;
     width: 100vw;
-
+}
+body {
+    background-color: black;
 }
 
 header {
@@ -14,6 +16,7 @@ header {
     height: 80px;
     width: 100%;
     position: fixed;
+    top:0;
     z-index: 1;
 }
 
@@ -62,7 +65,7 @@ p {
 .intro {
     margin: 120px 7vw 40px 7vw;
     padding: 2vw 2vw 3vw 2vw;
-    background-color: rgba(0, 45, 203, 0.67);
+    background-color: rgba(0, 45, 203, 0.8);
     border-radius: 0 40px;
 }
 
@@ -81,7 +84,7 @@ p {
 .textbox {
     margin: 50px 7vw ;
     padding: 2vw 2vw 3vw 2vw;
-    background-color: rgba(0, 45, 203, 0.75);
+    background-color: rgba(0, 45, 203, 0.8);
     border-radius: 0 40px;
 }
 
@@ -319,7 +322,7 @@ p {
 }
 
 .button th:nth-child(even) {
-    background-color: rgba(0, 45, 203, 0.75);
+    background-color: rgba(0, 45, 203, 0.8);
     border-radius: 20px;
     width: 31vw;
 }
@@ -327,4 +330,9 @@ p {
 .button table a:hover {
     text-decoration: underline;
     color: white;
+}
+
+.button th:nth-child(2):hover,
+.button th:nth-child(4):hover {
+    background-color: #002dcb;
 }

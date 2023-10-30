@@ -8,6 +8,10 @@
     width: 100vw;
 }
 
+body {
+    background-color: seashell;
+}
+
 h1 {
     font-family: "Autour One", serif;
     font-size: 22pt;
@@ -41,7 +45,7 @@ header li {
 }
 
 header a:hover {
-    color: white;
+    color: seashell;
     text-decoration: underline;
 }
 
