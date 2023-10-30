@@ -59,6 +59,10 @@ h2 {
     color: white;
 }
 
+.intro a {
+    text-decoration: underline;
+}
+
 .stats,
 .reflection {
     margin: 40px 7vw;
@@ -118,8 +122,9 @@ h2 {
 }
 
 .button table {
+    border: 1px black solid;
     width: 86vw;
-    height: 30px;
+    height: 45px;
     line-height: 30px;
     vertical-align: middle;
     text-align: center;
@@ -151,11 +156,15 @@ h2 {
 }
 
 @media (max-width: 500px) {
-    p, .stats li{
+    p, .stats li, table, th, tr {
         font-size: 10pt;
     }
 
+    h2 {
+        font-size: 12pt;
+    }
+
     h1 {
-        font-size: 18pt;
+        font-size: 15pt;
     }
 }
