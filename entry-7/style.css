@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Optima;
+    src: url(/fonts/Optima.ttc);
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #181654;
+    height:80px;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    color: #dfe7fa;
+    font-family: "Optima", sans-serif;
+    font-size: 25pt;
+    position: absolute;
+    left: 9vw;
+    line-height: 80px;
+}
+
+p,
+.reflection li {
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+    color: #dfe7fa;
+    line-height: 15pt;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+header li {
+    display: inline;
+    color: #dfe7fa;
+    margin-right: 6vw;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+}
+
+header ul {
+    position:absolute;
+    right: 5vw;
+    line-height: 80px;
+}
+
+h2 {
+    font-family: "Optima", sans-serif;
+    font-size: 20pt;
+    color: #dfe7fa;
+}
+
+.intro {
+    margin: 120px 7vw 50px 7vw;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: #26246d;
+    box-shadow: 15px 15px 20px rgba(24, 22, 84, 0.9);
+    border-radius: 0 40px;
+}
+
+.intro a {
+    text-decoration: underline;
+}
+
+.intro a:hover {
+    color: #181654;
+}
+
+.stats,
+.reflection {
+    margin: 50px 7vw;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: #26246d;
+    box-shadow: 15px 15px 20px rgba(24, 22, 84, 0.9);
+    border-radius: 0 40px;
+    color: #e0f8eb;
+}
+
+.table-box table, tr, td {
+    color: #dfe7fa;
+    border: white 0px solid;
+}
+
+.table-box tbody tr:nth-child(odd) {
+    background-color: #181654;
+}
+
+.table-box tr:first-child {
+    height: 100px;
+}
+
+.img-container1,
+.img-container2 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.img-container1 img,
+.img-container2 img {
+    max-width: 700px;
+}
+
+.reflection li::before {
+    content: "\2731";
+}
+
+.button {
+    margin: 0px 7vw 40px 7vw;
+}
+
+.button table, th {
+    width: 86vw;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    color: #dfe7fa;
+    font-size: 11pt;
+    font-family: "Optima", sans-serif;
+}
+
+.button th:nth-child(1),
+.button th:nth-child(5) {
+    width: 7vw;
+}
+
+.button th:nth-child(3) {
+    width: 6vw;
+}
+
+.button th:nth-child(2):hover,
+.button th:nth-child(4):hover {
+    background-color: #181654;
+}
+
+.button th:nth-child(even) {
+    background-color: #26246d;
+    box-shadow: 15px 15px 20px rgba(24, 22, 84, 0.9);
+    border-radius: 20px;
+    width: 31vw;
+}
+
+.button table a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    p, .stats li, table, th, tr {
+        font-size: 10pt;
+    }
+
+    h2 {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 15pt;
+    }
+}
