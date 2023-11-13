@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entry 8</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Quattrocento&family=Rakkas&family=Red+Hat+Text&family=Yeseva+One&display=swap" rel="stylesheet">
+    </head>
+
+    <section class="block">
+    </section>
+
+    <header>
+        <h1>Entry 8: Keeping Hands Clean</h1>
+        <ul>
+            <li>
+                <button>
+                    <a href="https://yyyzzx.github.io/harmonic-collection/">Homepage</a>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <a href="#">About</a>
+                </button>
+            </li>
+                
+            <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()"
+                    class="dropdown">Entries</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-1/">Water Inkate</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-2/">Sleep Duration</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-3/">Taking Medications</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-4/">Cooking</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-5/">Orthodontic Treatment</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-6/">Walking as a Transportation</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-7/">Screen Time</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <section class="banner">
+        <div class="circle">
+            <h2>Habit-Development-Log-</h2>
+        </div>
+    </section>
+
+    <body>
+        <script src="script.js"></script>
+        <section class="intro">
+            <h3>Introduction</h3>
+            <br>
+            <p>The frequency of handwashing wasn’t something I often considered until 2019 when COVID came. At the time of the outbreak, all kinds of prevention methods were spreading around. Ridiculous rumors, such as drinking alcohol could prevent coronavirus, were all around the internet to grab attention, but developments of some simple sanitization habits could be quite effective for coronavirus prevention. An influence on me from that period is that the first thing I do whenever I arrive home is to wash my hands. </p>
+            <br>
+            <p>We get in contact with countless germs with our hands, but we don’t think much about them as their negative effects don’t immediately appear on us. According to the <a href="https://www.cdc.gov/handwashing/why-handwashing.html">CDC (Centers for Disease Control and Prevention)</a>, The benefits of washing hands frequently are that it prevents the spread of illnesses and helps raise antibiotic resistance. </p>
+            <br>
+            <p>This week, I will wash my hands in the <a href="https://www.cdc.gov/hygiene/personal-hygiene/hands.html">correct steps</a>, after accessing public facilities, at the <a href="https://www.cdc.gov/hygiene/personal-hygiene/hands.html">key times</a>, and record the number of times I wash my hands each day. Also, the number of steps I walk each day to find out whether there is a correlation between staying in outdoor/indoor areas and hand washing frequency.</p>
+            <br>
+            <p>The key times to wash hands suggested by the CDC that apply to me:</p>
+            <br>
+            <ul>
+                <li>	Before, during, and after preparing food</li>
+                <li>	Before and after eating food</li>
+                <li>	Before and after treating a cut or a wound</li>
+                <li>	After using the toilet</li>
+                <li>	After blowing your nose, coughing, or sneezing</li>
+                <li>	After touching an animal, animal feed, or animal waste</li>
+                <li>	After handling pet food or pet treats</li>
+                <li>	After touching garbage</li>
+            </ul>
+        </section>
+
+        <section class="stats">
+            <h3>Statistics Collected</h3>
+            <br>
+            <p>The table below displays the basic statistics that I have collected over the week:</p>
+            <br>
+            <div class="table-box"><table>
+                <tbody>
+                    <tr>
+                        <th class="title" title="Click to sort" onclick="sortTable(0)">Day of Week</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(1)">Number of Hand Washes</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(2)">Steps Walked</th>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <th>18</th>
+                        <th>9757</th>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <th>17</th>
+                        <th>6323</th>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <th>23</th>
+                        <th>608</th>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <th>16</th>
+                        <th>13091</th>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <th>28</th>
+                        <th>469</th>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <th>25</th>
+                        <th>533</th>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <th>22</th>
+                        <th>6732</th>
+                    </tr>
+                </tbody>
+            </table></div>
+            <br>
+            <p>To compare and find out the relationship between steps walked and the number of times I wash my hands per day, I made this scatter graph displayed below: </p>
+            <div class="img-container">
+                <img src="images/scatter-graph.png">
+            </div>
+            <p>Each point plotted represents a day in each week and its x and y coordinates determine the screen time and the time spent out respectively. The diagonal line at the center is the line of best fit derived from all seven points. The closer the points are to the line of best fit, the stronger the two events correlate, and the closer the coefficient of determination (R-squared) is to 1, the better the fit. An R-squared value of 0.7607 indicates a relatively strong positive linear relationship. This graph proves that the events, of spending time on social media apps and going out, are somehow positively correlated, meaning that the more steps I walk per day, the less amount of time I tend to wash my hands.</p>
+        </section>
+
+        <section class="reflection">
+            <h3>Reflection</h3>
+            <br>
+            <p>During the week of habit development and documentation, I realized that I wash my hands quite a lot of times when I cook, as my hands get greasy very frequently. Also, sleeping affects the figures; the longer I am awake, the more possible I am going to walk more and wash my hands more times.</p>
+            <br>
+            <p>The figures for steps walked reflect the amount of time I spend outdoors. On Thursday, Saturday, and Sunday, when the steps that I walked were under 1000 steps, I spent the whole day at home. These are also the days I washed my hands most frequently. That may be because I encounter key times for washing hands more often when I am at home, but I think it is related to the limited opportunity to wash my hands in outdoor areas. During these cases, the importance of having hand sanitizers around is shown. </p>
+        </section>
+
+        <section class="pn-entry">
+            <table>
+                <tr>
+                    <th> </th>
+                    <th><a href="https://yyyzzx.github.io/harmonic-collection/entry-7/">&#9754; Previous Entry</a></th>
+                    <th> </th>
+                    <th><a href="#">Next Entry &#9755;</a></th>
+                    <th> </th>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
