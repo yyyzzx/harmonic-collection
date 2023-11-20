@@ -4,33 +4,49 @@
         <title>Homepage</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Quattrocento&family=Red+Hat+Text&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Quattrocento&family=Red+Hat+Text&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Quattrocento&family=Red+Hat+Text&family=Yeseva+One&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
     </head>
 
 <body>
-    <h4>HARMONIC COLLECTION</h4>
-    <h1>Habit Development Logs</h1>
+    <script src="script.js"></script>
+    <h1>Habit<br>Development<br>Logs</h1>
 
     <header>
         <ul>
-            <li><a href="https://yyyzzx.github.io/harmonic-collection/">Homepage</a></li>
-            <li><a href="https://yyyzzx.github.io/harmonic-collection/about/">About</a></li>
-            <li><a href="#middle">Entries</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()"
+                    class="dropdown">Entries</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-1/">Water Inkate</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-2/">Sleep Duration</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-3/">Taking Medications</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-4/">Cooking</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-5/">Orthodontic Treatment</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-6/">Walking as a Transportation</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-7/">Screen Time</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-8/">Keeping Hands Clean</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <button>
+                    <div class="homepage"><a href="https://yyyzzx.github.io/harmonic-collection/">Homepage</a></div>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <div class="about"><a href="https://yyyzzx.github.io/harmonic-collection/about/">About</a></div>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <div class="references"><a href="#">References</a></div>
+                </button>
+            </li>
         </ul>
     </header>
 
-    <div id="middle"></div>
     <div class="entries">
     <div class="container">
         <!--ENTRY 1-->
@@ -181,23 +197,6 @@
                 </table>
                 <h2>Keeping Hands Clean</h2>
                 <p>A documentation of number of daily hand washes and finding out its correlation with the amount of time I stay outdoor/indoor.</p>
-            </div>
-        </div>
-
-        <!--ENTRY 9-->
-        <div class="card">
-            <div class="img">
-                <img src="images/future entries.jpg" alt="entry-9">
-            </div>
-            <div class="text">
-                <table>
-                    <tr>
-                        <th><h3>Entry 9</h3></th>
-                        <th><div class="right"><h3>Date</h3></div></th>
-                    </tr>
-                </table>
-                <h2>Title</h2>
-                <p>Description.</p>
             </div>
         </div>
     </div>
