@@ -268,6 +268,11 @@ h3 {
     width: 31vw;
 }
 
+.pn-entry th:nth-child(odd) {
+    width: 25.5vw;
+}
+
+
 .pn-entry table a:hover {
     color: #faefea;
 }
