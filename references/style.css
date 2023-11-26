@@ -84,14 +84,79 @@ header li {
 
 .show {display:block;}
 
+.h1-container {
+    padding: 60px 0 75px 0;
+}
+
 h1 {
     font-family: "Optima", serif;
     font-size: 85pt;
-    padding: 70px 0 75px 0;
     text-align: center;
     word-spacing: 25px;
-    line-height: 95px;;
+    line-height: 95px;
     font-weight: bold;
+}
+
+.h1-2 {
+    animation: h1-2 3s 1;
+}
+
+@keyframes h1-2 {
+    0%{
+        color: oldlace;
+        letter-spacing: 80px;
+    }
+    30%{
+        color: oldlace;
+        letter-spacing: 25px;
+    }
+    80%{
+        letter-spacing: 8px;
+    }
+}
+
+.h1-1 {
+    animation: h1-1 3s 1;
+    position: relative;
+}
+
+@keyframes h1-1 {
+    0%{
+        color: oldlace;
+        letter-spacing: 80px;
+        top: 95px;
+    }
+    30%{
+        color: oldlace;
+        letter-spacing: 25px;
+        top: 95px;
+    }
+    80%{
+        letter-spacing: 8px;
+        top: 0px;
+    }
+}
+
+.h1-3 {
+    animation: h1-3 3s 1;
+    position: relative;
+}
+
+@keyframes h1-3 {
+    0%{
+        color: oldlace;
+        letter-spacing: 80px;
+        top: -95px;
+    }
+    30%{
+        color: oldlace;
+        letter-spacing: 25px;
+        top: -95px;
+    }
+    80%{
+        letter-spacing: 8px;
+        top: 0px;
+    }
 }
 
 table {
@@ -112,6 +177,7 @@ tr{
 
 td {
     border: 0px black solid;
+    padding-top: 3px;
 }
 
 table a:hover {
