@@ -278,9 +278,10 @@ h3 {
 }
 
 @media (max-width: 400px) {
-    p, .intro, .stata, .reflection{
+    p{
         font-size: 8pt;
     }
+    
     .stats li, table, th, tr {
         font-size: 10pt;
     }
@@ -296,9 +297,11 @@ h3 {
     h1 {
         font-size: 15pt;
     }
+
     header li {
         margin-right: 0vw;
     }
+
     .circle {
         width: 40vw;
         height: 40vw;

@@ -256,15 +256,37 @@ h3 {
 }
 
 @media (max-width: 400px) {
-    p, .stats li, table, th, tr {
+    p{
+        font-size: 8pt;
+    }
+    
+    .stats li, table, th, tr {
         font-size: 10pt;
     }
 
-    h2 {
+    h3 {
         font-size: 12pt;
+    }
+
+    h2 {
+        font-size: 30pt;
     }
 
     h1 {
         font-size: 15pt;
+    }
+
+    header li {
+        margin-right: 0vw;
+    }
+
+    .circle {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .img-container1 img,
+    .img-container2 img {
+        max-width: 88vw;
     }
 }

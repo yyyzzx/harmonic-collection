@@ -316,7 +316,11 @@ li {
 }
 
 @media (max-width: 400px) {
-    p, .stats li, table, th, tr {
+    p{
+        font-size: 8pt;
+    }
+    
+    .stats li, table, th, tr {
         font-size: 10pt;
     }
 
@@ -330,5 +334,14 @@ li {
 
     h1 {
         font-size: 15pt;
+    }
+
+    header li {
+        margin-right: 0vw;
+    }
+
+    .circle {
+        width: 40vw;
+        height: 40vw;
     }
 }
