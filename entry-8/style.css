@@ -278,7 +278,7 @@ h3 {
 }
 
 @media (max-width: 400px) {
-    p{
+    p, .intro, .stata, .reflection{
         font-size: 8pt;
     }
     .stats li, table, th, tr {
