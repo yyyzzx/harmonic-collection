@@ -205,4 +205,8 @@ td:nth-child(3) {
     h1 {
         font-size: 50pt;
     }
+    table {
+        width: 86vw;
+        margin: 0 7vw 50px 7vw;
+    }
 }

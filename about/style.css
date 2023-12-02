@@ -203,4 +203,7 @@ h2 {
     h1 {
         font-size: 50pt;
     }
+    .text {
+        margin: 80px 7vw 0px 7vw;
+    }
 }
