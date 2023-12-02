@@ -186,11 +186,15 @@ table a:hover {
 }
 
 td:nth-child(1) {
-    width: 20vw
+    width: 20vw;
+}
+
+td:nth-child(2) {
+    width: 25vw;
 }
 
 td:nth-child(3) {
-    text-align: right;
+    width: 25vw
 }
 
 @media (max-width: 400px) {

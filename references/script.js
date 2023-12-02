@@ -41,7 +41,7 @@ document.write(
 )
 
 document.write(
-  "<table> <tr> <td><a href='https://yyyzzx.github.io/harmonic-collection/entry-7/'>Entry 7: Screen Time</a></td> <td style='width:8vw'><a href='https://pharmeasy.in/blog/'>PharmEasy</a></td> <td style='width:42vw'><a href='https://pharmeasy.in/blog/phone-time-and-overall-health-whats-the-optimal-screen-time/'>Phone Time And Overall Health - What's The Optimal Screen Time</a></td> </tr> </table>"
+  "<table> <tr> <td><a href='https://yyyzzx.github.io/harmonic-collection/entry-7/'>Entry 7: Screen Time</a></td> <td><a href='https://pharmeasy.in/blog/'>PharmEasy</a></td> <td><a href='https://pharmeasy.in/blog/phone-time-and-overall-health-whats-the-optimal-screen-time/'>Phone Time And Overall Health - What's The Optimal Screen Time</a></td> </tr> </table>"
 )
 
 document.write(
