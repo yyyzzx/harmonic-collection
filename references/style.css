@@ -193,3 +193,16 @@ td:nth-child(3) {
     text-align: right;
 }
 
+@media (max-width: 400px) {
+    p, table, th, tr {
+        font-size: 10pt;
+    }
+
+    h2 {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 50pt;
+    }
+}

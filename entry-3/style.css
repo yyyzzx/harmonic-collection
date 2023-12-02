@@ -1,66 +1,163 @@
-.bgimg {
-    background-image: url("images/bgimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    position: absolute;
-    width: 100vw;
+@font-face {
+    font-family: Optima;
+    src: url(/fonts/Optima.ttc)
+}
+
+body {
+    background-color: lavender;
+}
+
+.block {
+    background-color: lavender;
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
 }
 
 header {
-    background-color: darkslateblue;
-    height: 80px;
-    width: 100%;
+    background-color: #424288;
+    height:80px;
+    width: 94%;
+    margin: 0 3vw;
     position: fixed;
-    z-index: 1;
+    top: 40px;
+    z-index: 2;
+    box-shadow: 0px 0px 25px rgba(66, 66, 59, 0.9);
+    border-radius: 0px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.circle {
+    margin-top: 147px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    animation: spin 20s linear infinite;
+    z-index: 0;
+    font-family: "Optima", serif;
+    color: #424288;
+    font-size: 30pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(230, 230, 250, 0.6);
+}
+
+.circle span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+header li {
+    display: inline;
+    color: lavender;
+    margin-right: 2vw;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
 }
 
 header ul {
     position: absolute;
+    top: 17px;
     right: 5vw;
-    line-height: 80px;
+    vertical-align: middle;
 }
 
-header li {
-    font-family: "Quattrocento", serif;
-    display: inline;
-    color:lavender;
-    margin-right: 6vw;
-    font-size: 13pt;
-
+.dropdown button,
+header li button {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
 }
 
-header a:hover {
-    text-decoration: underline;
-    color: white;
+.dropdown button:hover,
+.dropdown button:focus,
+header li button:hover {
+    background-color: #665f9d;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #424288;
+    min-width: 226px;
+    z-index: 1;
+    box-shadow: 0px 0px 25px rgba(66, 66, 59, 0.9);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #665f9d;
+}
+
+.show {display:block;}
 
 h1 {
-    font-family: "Quattrocento", serif;
-    font-size: 30pt;
     color: lavender;
+    font-family: "Optima", sans-serif;
+    font-size: 25pt;
     position: absolute;
     left: 9vw;
     line-height: 80px;
 }
 
-h2 {
-    font-family: "Quattrocento", serif;
-    font-size: 23pt;
+h3 {
+    font-family: "Optima", sans-serif;
+    font-size: 20pt;
     color: lavender;
 }
 
-p{
-    font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
+p,
+.approaches li {
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+    line-height: 20px;
     color: lavender;
 }
 
 .intro {
-    margin: 120px 7vw 40px 7vw;
-    padding: 3vw;
-    background-color: rgba(72, 61, 139, 0.67);
+    margin: 0px 7vw 40px 7vw;
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: rgba(72, 61, 139, 0.8);
     border-radius: 40px;
 }
 
@@ -69,16 +166,14 @@ p{
     justify-content: space-between;
     padding: 0 2vw 3vw 2vw;
     margin: 40px 7vw 40px 7vw;
-    font-family: sans-serif;
-    font-size: small;
-    background-color: rgba(25, 25, 112, 0.67);
+    background-color: rgba(25, 25, 112, 0.8);
     border-radius: 40px;
 }
 
 .bottle p {
     padding: 0 1vw;
-    font-size: 10pt;
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
     color: lavender;
 }
 .bottle div {
@@ -91,8 +186,8 @@ p{
 }
 
 h3 {
-    font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Optima", sans-serif;
+    font-size: 20pt;
     color: lavender;
 }
 
@@ -105,30 +200,27 @@ h3 {
 }
 
 .bottle a:hover {
-    color: white;
+    background-color: #665f9d;
+    padding: 2px 0;
 }
 
 .approaches {
-    padding: 3vw;
-    background-color: rgba(72, 61, 139, 0.67);
+    padding: 3vw 2vw;
+    background-color: rgba(72, 61, 139, 0.8);
     border-radius: 40px;
     margin: 40px 7vw;
 }
-.approaches li {
-    font-family: "Red Hat Text", sans-serif;
-    color: lavender;
- }
 
 .approaches li::before {
-    content: "\27AB";
+    content: "\2731";
  }
 
 .stats {
-    padding: 3vw;
+    padding: 2vw 2vw 3vw 2vw;
     margin: 40px 7vw;
-    font-family: sans-serif;
-    font-size: small;
-    background-color: rgba(25, 25, 112, 0.67);
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+    background-color: rgba(25, 25, 112, 0.8);
     border-radius: 40px;
  }
 
@@ -145,15 +237,15 @@ h3 {
     font-family: sans-serif;
     font-size: small;
     table-layout: fixed;
-    font-size: 10pt;
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
     color: lavender;
  }
 
 .ref {
     margin: 40px 7vw;
-    padding: 3vw;
-    background-color: rgba(72, 61, 139, 0.67);
+    padding: 2vw 2vw 3vw 2vw;
+    background-color: rgba(72, 61, 139, 0.8);
     border-radius: 40px;
 }
 
@@ -164,8 +256,8 @@ h3 {
 .button table {
     text-align: center;
     color: lavender;
-    font-family: "Red Hat Text", sans-serif;
-    border-radius: 10px;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
     width: 86vw;
     height: 45px;
 }
@@ -187,12 +279,33 @@ h3 {
 }
 
 .button th:nth-child(even) {
-    background-color: rgba(25, 25, 112, 0.67);
+    background-color: rgba(25, 25, 112, 0.8);
     border-radius: 20px;
     width: 31vw;
 }
 
+.button th:nth-child(even):hover {
+    background-color: rgba(72, 61, 139, 0.8);
+}
+
 .button table a:hover {
-    text-decoration: underline;
     color: white;
+}
+
+@media (max-width: 400px) {
+    p, .stats li, table, th, tr {
+        font-size: 10pt;
+    }
+
+    h3 {
+        font-size: 12pt;
+    }
+
+    h2 {
+        font-size: 30pt;
+    }
+
+    h1 {
+        font-size: 15pt;
+    }
 }

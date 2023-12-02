@@ -1,84 +1,169 @@
-.bgimg {
-    background-image: url("images/bgimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    position: absolute;
-    width: 100vw;
+@font-face {
+    font-family: Optima;
+    src: url(/fonts/Optima.ttc)
 }
+
 body {
     background-color: black;
 }
 
-header {
-    background-color: #002dcb;
-    height: 80px;
+.block {
+    background-color: #0c239c;
+    height: 90px;
     width: 100%;
-    position: fixed;
-    top:0;
     z-index: 1;
+    position: fixed;
+    top: 0px;
+}
+
+header {
+    background-color: black;
+    height:80px;
+    width: 94%;
+    margin: 0 3vw;
+    position: fixed;
+    top: 40px;
+    z-index: 2;
+    box-shadow: 0px 0px 25px rgba(0, 45, 203, 0.5);
+    border-radius: 0px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.circle {
+    margin-top: 147px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #94c5cc 0px solid;
+    overflow: hidden;
+    user-select: none;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    animation: spin 20s linear infinite;
+    z-index: 0;
+    font-family: "Optima", serif;
+    color: #0c239c;
+    font-size: 30pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(154, 174, 213, 0.7);
+}
+
+.circle span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 h1 {
-    font-family: "Quattrocento", serif;
-    font-size: 30pt;
     color: #9aaed5;
+    font-family: "Optima", sans-serif;
+    font-size: 25pt;
     position: absolute;
     left: 9vw;
     line-height: 80px;
 }
 
+header li {
+    display: inline;
+    color: #9aaed5;
+    margin-right: 2vw;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+}
+
 header ul {
     position: absolute;
+    top: 17px;
     right: 5vw;
-    line-height: 80px;
+    vertical-align: middle;
 }
 
-header li {
-    font-family: "Quattrocento", serif;
-    display: inline;
-    color:#9aaed5;
-    margin-right: 6vw;
-    font-size: 13pt;
-
+.dropdown button,
+header li button {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
 }
 
-header a:hover {
-    text-decoration: underline;
-    color: white;
+.dropdown button:hover,
+.dropdown button:focus,
+header li button:hover {
+    background-color: rgba(0, 45, 203, 0.8);
 }
 
-h2 {
-    font-family: "Quattrocento", serif;
-    font-size: 23pt;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 226px;
+    z-index: 1;
+    box-shadow: 0px 0px 25px rgba(0, 45, 203, 0.5);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 45, 203, 0.8);
+}
+
+.show {display:block;}
+
+h3 {
+    font-family: "Optima", sans-serif;
+    font-size: 20pt;
     color: #9aaed5;
 }
 
-p {
-    font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
+p,
+.intro li {
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+    line-height: 20px;
     color:#9aaed5;
-    text-align: justify;
 }
 
 .intro {
-    margin: 120px 7vw 40px 7vw;
+    margin: 0px 7vw 40px 7vw;
     padding: 2vw 2vw 3vw 2vw;
     background-color: rgba(0, 45, 203, 0.8);
     border-radius: 0 40px;
 }
 
-.intro li {
-    font-size: 11pt;
-    font-family: "Red Hat Text", sans-serif;
-    color: #9aaed5;
-    padding-left: 2vw;
-
-}
-
 .intro li::before {
-    content: "\27A5";
+    content: "\2731";
 }
 
 .textbox {
@@ -91,8 +176,8 @@ p {
 .textbox th {
     border: 0px black solid;
     color: white;
-    font-size: 8pt;
-    font-family: "Red Hat Text", sans-serif;
+    font-size: 9pt;
+    font-family: "Optima", sans-serif;
     text-align: center;
 }
 
@@ -287,7 +372,7 @@ p {
 }
 
 .img-container img {
-    width: 60vw;
+    width: 62vw;
 }
 
 .button {
@@ -305,8 +390,8 @@ p {
 .button table {
     text-align: center;
     color: #9aaed5;
-    font-family: "Red Hat Text", sans-serif;
     border-radius: 10px;
+    font-family: "Optima", sans-serif;
 }
 
 .button th:nth-child(1) {
@@ -328,11 +413,28 @@ p {
 }
 
 .button table a:hover {
-    text-decoration: underline;
     color: white;
 }
 
 .button th:nth-child(2):hover,
 .button th:nth-child(4):hover {
     background-color: #002dcb;
+}
+
+@media (max-width: 400px) {
+    p, .stats li, table, th, tr {
+        font-size: 10pt;
+    }
+
+    h3 {
+        font-size: 12pt;
+    }
+
+    h2 {
+        font-size: 30pt;
+    }
+
+    h1 {
+        font-size: 15pt;
+    }
 }

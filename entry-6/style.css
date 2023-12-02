@@ -1,62 +1,168 @@
+@font-face {
+    font-family: Optima;
+    src: url(/fonts/Optima.ttc)
+}
+
 body {
     background-color:ivory;
 }
 
-header {
-    background-color: #95b088;
-    height:80px;
-    width:100%;
-    position: fixed;
-    top:0;
+.block {
+    background-color: #BAC8A0;
+    height: 90px;
+    width: 100%;
     z-index: 1;
+    position: fixed;
+    top: 0px;
 }
 
-h1 {
-    color:white;
-    font-family: "Autour One", serif;
-    font-size: 22pt;
-    position:absolute;
-    left: 9vw;
-    line-height: 80px;
+.banner {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-p {
-    font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
-
+.circle {
+    margin-top: 147px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #94c5cc 0px solid;
+    overflow: hidden;
+    user-select: none;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    animation: spin 20s linear infinite;
+    z-index: 0;
+    font-family: "Optima", serif;
+    color: #BAC8A0;
+    font-size: 30pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(255, 255, 220, 0.6);
 }
 
-header a:hover {
-    text-decoration: underline;
-    color: white;
+.circle span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+header {
+    background-color: ivory;
+    height:80px;
+    width: 94%;
+    margin: 0 3vw;
+    position: fixed;
+    top: 40px;
+    z-index: 2;
+    box-shadow: 0px 0px 25px rgba(66, 66, 59, 0.7);
+    border-radius: 0px;
 }
 
 header li {
     display: inline;
-    color: white;
-    margin-right: 4vw;
-    font-family: "Autour One", serif;
-    font-size: 10pt;
+    color: darkslategray;
+    margin-right: 2vw;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
 }
 
 header ul {
-    position:absolute;
+    position: absolute;
+    top: 17px;
     right: 5vw;
+    vertical-align: middle;
+}
+
+.dropdown button,
+header li button {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown button:hover,
+.dropdown button:focus,
+header li button:hover {
+    background-color: #BAC8A0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: ivory;
+    min-width: 226px;
+    z-index: 1;
+    box-shadow: 0px 0px 25px rgba(66, 66, 59, 0.7);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #BAC8A0;
+}
+
+.show {display:block;}
+
+h1 {
+    color: darkslategray;
+    font-family: "Optima", sans-serif;
+    font-size: 25pt;
+    position: absolute;
+    left: 9vw;
     line-height: 80px;
 }
 
-h2 {
-    font-family: "Autour One", serif;
-    font-size: 18pt;
-    color: white;
+p,
+.stats li,
+.stats table {
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+    line-height: 20px;
+    color: darkslategray;
+}
+
+h3 {
+    font-family: "Optima", sans-serif;
+    font-size: 20pt;
+    color: #42423b;
 }
 
 .intro {
-    margin: 120px 7vw 40px 7vw;
+    margin: 0px 7vw 40px 7vw;
     padding: 2vw 2vw 3vw 2vw;
     background-color: #BAC8A0;
     border-radius: 0 40px;
-    color: white;
+    color: darkslategray;
+    position: relative;
 }
 
 .intro a {
@@ -64,7 +170,8 @@ h2 {
 }
 
 .intro a:hover {
-    color: #95b088;
+    background-color: rgba(250, 250, 230, 0.4);
+    padding: 2px 0;
 }
 
 .stats,
@@ -73,19 +180,18 @@ h2 {
     padding: 2vw 2vw 3vw 2vw;
     background-color: #BAC8A0;
     border-radius: 0 40px;
-    color: white;
+    color: darkslategray;
 }
 
-.completion table {
+.completion table, th {
     width: 81vw;
 }
 
 .cpmpletion tr, th {
-    border: 1px solid ivory;
     height: 35px;
     font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
     line-height: 35px;
+    border: 1px solid darkslategray;
 }
 
 .completion th:first-child {
@@ -114,12 +220,7 @@ h2 {
 }
 
 .img-container img {
-    max-height: 650px;
-}
-
-.stats li {
-    font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
+    width: 73vw;
 }
 
 .stats li::before {
@@ -130,39 +231,39 @@ h2 {
     margin: 0px 7vw 40px 7vw;
 }
 
-.button table, th {
+.button table {
     width: 86vw;
     height: 45px;
     line-height: 45px;
     vertical-align: middle;
     text-align: center;
-    color: white;
-    font-size: 12pt;
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Optima", sans-serif;
+    font-size: 11pt;
+    color: darkslategray;
 }
 
-.button th:nth-child(1),
-.button th:nth-child(5) {
+.button td:nth-child(1),
+.button td:nth-child(5) {
     width: 7vw;
 }
 
-.button th:nth-child(3) {
+.button td:nth-child(3) {
     width: 6vw;
 }
 
-.button th:nth-child(2):hover,
-.button th:nth-child(4):hover {
+.button td:nth-child(2):hover,
+.button td:nth-child(4):hover {
     background-color: #95b088;
 }
 
-.button th:nth-child(even) {
+.button td:nth-child(even) {
     background-color: #BAC8A0;
     border-radius: 20px;
     width: 31vw;
 }
 
 .button table a:hover {
-    text-decoration: underline;
+    color: ivory;
 }
 
 @media (max-width: 400px) {

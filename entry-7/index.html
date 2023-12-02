@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Entry 7</title>
+        <title>Screen Time</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="../style/reset.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Quattrocento&family=Red+Hat+Text&display=swap" rel="stylesheet">
     </head>
+
+    <section class="block"></section>
 
     <header>
         <h1>Entry 7: Screen Time</h1>
         <ul>
-            <li><a href="https://yyyzzx.github.io/harmonic-collection/">Homepage</a></li>
-            <li><a href="https://yyyzzx.github.io/harmonic-collection/about/">About</a></li>
-            <li><a href="https://yyyzzx.github.io/harmonic-collection/#middle">Entries</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()"
+                    class="dropdown">Entries</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-1/">Water Inkate</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-2/">Sleep Duration</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-3/">Taking Medications</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-4/">Cooking</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-5/">Orthodontic Treatment</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-6/">Walking as a Transportation</a>
+                        <a href="https://yyyzzx.github.io/harmonic-collection/entry-8/">Keeping Hands Clean</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <button>
+                    <a href="https://yyyzzx.github.io/harmonic-collection/">Homepage</a>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <a href="https://yyyzzx.github.io/harmonic-collection/about/">About</a>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <a href="https://yyyzzx.github.io/harmonic-collection/references/">References</a>
+                </button>
+            </li>
         </ul>
     </header>
+
+    <section class="banner">
+        <div class="circle">
+            <h2>Habit-Development-Logs-</h2>
+        </div>
+    </section>
 
     <body>
         <script src="script.js"></script>
         <section class="intro">
-            <h2>Introduction</h2>
+            <h3>Introduction</h3>
             <br>
             <p>Due to the rapid development of information technology, the usage of digital devices has become more common in our daily lives, causing excessive eye use when we constantly stare at screens. This then leads to health issues including eye strain, eye dryness, and headaches. For me, the largest impact electronics have on me is that it deepens myopia.</p>
             <br>
@@ -31,7 +63,7 @@
         </section>
 
         <section class="stats">
-            <h2>Statistics Collected</h2>
+            <h3>Statistics Collected</h3>
             <br>
             <p>The table below displays the basic statistics that I have collected over the week: </p>
             <br>
@@ -39,11 +71,11 @@
             <table>
                 <tbody>
                     <tr>
-                        <th title="Click to sort" onclick="sortTable(0)">Day of Week</th>
-                        <th title="Click to sort" onclick="sortTable(1)">Number of Pickups</th>
-                        <th title="Click to sort" onclick="sortTable(2)">Screen Time (mins)</th>
-                        </div><th title="Click to sort" onclick="sortTable(3)">Goal Accomplished</th>
-                        <div class="1row"></div><th title="Click to sort" onclick="sortTable(4)">Time Spent Out (mins)</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(0)">Day of Week</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(1)">Number of Pickups</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(2)">Screen Time (mins)</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(3)">Goal Accomplished</th>
+                        <th class="title" title="Click to sort" onclick="sortTable(4)">Time Spent Out (mins)</th>
                     </tr>
                     <tr>
                         <th>Tuesday</th>
@@ -112,7 +144,7 @@
         </section>
 
         <section class="reflection">
-            <h2>Reflection</h2>
+            <h3>Reflection</h3>
             <br>
             <p>Compared to the previous week, the total screen time on social media apps this week has reduced by approximately 13 percent to 22 hours and 18 minutes, with an average of 3.18 hours per day. Some improvements were made, but still quite far away from the 2 hours per day. The fact that only 3 out of 7 days have accomplished the goal reflects difficulties in attempts to reduce screen time.</p>
             <br>

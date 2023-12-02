@@ -7,18 +7,82 @@ body {
     background-color: oldlace;
 }
 
+.h1-container {
+    padding: 60px 0 75px 0;
+}
+
 h1 {
     font-family: "Optima", serif;
     font-size: 85pt;
-    padding: 70px 0 75px 0;
     text-align: center;
     word-spacing: 25px;
     line-height: 95px;
     font-weight: bold;
 }
 
+.h1-2 {
+    animation: h1-2 3s 1;
+}
+
+@keyframes h1-2 {
+    0%{
+        color: oldlace;
+        letter-spacing: 80px;
+    }
+    30%{
+        color: oldlace;
+        letter-spacing: 25px;
+    }
+    80%{
+        letter-spacing: 8px;
+    }
+}
+
+.h1-1 {
+    animation: h1-1 3s 1;
+    position: relative;
+}
+
+@keyframes h1-1 {
+    0%{
+        color: oldlace;
+        letter-spacing: 80px;
+        top: 95px;
+    }
+    30%{
+        color: oldlace;
+        letter-spacing: 25px;
+        top: 95px;
+    }
+    80%{
+        letter-spacing: 8px;
+        top: 0px;
+    }
+}
+
+.h1-3 {
+    animation: h1-3 3s 1;
+    position: relative;
+}
+
+@keyframes h1-3 {
+    0%{
+        opacity: 0;
+        letter-spacing: 80px;
+        top: -95px;
+    }
+    30%{
+        opacity: 0;
+        letter-spacing: 25px;
+        top: -95px;
+    }
+    80%{
+        letter-spacing: 8px;
+        top: 0px;
+    }
+}
+
 header {
-    background-color: white;
     height:80px;
     width: 100%;
     z-index: 2;
@@ -43,7 +107,7 @@ header li {
 
 .homepage,
 .references {
-    background-color: oldlace;
+    background-color: blanchedalmond;
     border: none;
     padding: 15px;
     margin-top: 16px;
@@ -51,7 +115,7 @@ header li {
 }
 
 .dropdown button {
-    background-color: oldlace;
+    background-color: blanchedalmond;
     border: none;
     padding: 15px;
     margin-top: 16px;
@@ -101,7 +165,7 @@ header li {
 .show {display:block;}
 
 .text {
-    padding: 30px 15vw;
+    margin: 80px 15vw 0px 15vw;
 }
 
 p {
@@ -128,7 +192,7 @@ h2 {
 }
 
 @media (max-width: 400px) {
-    p, .stats li, table, th, tr {
+    p, table, th, tr {
         font-size: 10pt;
     }
 
