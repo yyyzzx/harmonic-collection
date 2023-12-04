@@ -192,6 +192,7 @@ h3 {
     font-size: 12pt;
     line-height: 35px;
     border: 1px solid darkslategray;
+    vertical-align: middle;
 }
 
 .completion th:first-child {
@@ -309,4 +310,11 @@ h3 {
     .completion th:nth-child(8) {
         width: 8.5vw;
 }
+}
+
+@media (max-width: 1300px) {
+    .color {
+        background-color: rgba(250, 250, 230, 0.4);
+        padding: 17px 0;
+    }
 }
